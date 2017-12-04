@@ -580,7 +580,7 @@ export var ReactTelephoneInput = createReactClass({
     },
     render: function render() {
         var arrowClasses = classNames({
-            iti-arrow: true,
+            arrow: true,
             up: this.state.showDropDown
         });
         var inputClasses = classNames({
