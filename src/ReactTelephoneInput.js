@@ -671,7 +671,7 @@ export var ReactTelephoneInput = createReactClass({
                     highlight: self.state.highlightCountryIndex === index
                 })
 
-                var inputFlagClasses = `flag ${country.iso2}`
+                var inputFlagClasses = `iti-flag ${country.iso2}`
 
                 return (
                     <li
@@ -733,7 +733,7 @@ export var ReactTelephoneInput = createReactClass({
     },
     render() {
         var arrowClasses = classNames({
-            arrow: true,
+            iti-arrow: true,
             up: this.state.showDropDown
         })
         var inputClasses = classNames({
@@ -748,7 +748,7 @@ export var ReactTelephoneInput = createReactClass({
             'open-dropdown': this.state.showDropDown
         })
 
-        var inputFlagClasses = `flag ${this.state.selectedCountry.iso2}`
+        var inputFlagClasses = `iti-flag ${this.state.selectedCountry.iso2}`
         let otherProps = this.props.inputProps
         if (this.props.inputId) {
             otherProps.id = this.props.inputId
