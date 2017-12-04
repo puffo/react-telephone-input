@@ -589,7 +589,7 @@ export var ReactTelephoneInput = createReactClass({
         });
 
         var flagViewClasses = classNames({
-            'flag-dropdown': true,
+            'flag-container': true,
             'open-dropdown': this.state.showDropDown
         });
 
@@ -601,7 +601,7 @@ export var ReactTelephoneInput = createReactClass({
         return React.createElement(
             'div',
             {
-                className: classNames('react-tel-input', this.props.classNames, this.props.className)
+                className: classNames('intl-tel-input', this.props.classNames, this.props.className)
             },
             React.createElement('input', _extends({
                 onChange: this.handleInput,

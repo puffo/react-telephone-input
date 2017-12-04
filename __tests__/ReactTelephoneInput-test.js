@@ -44,7 +44,7 @@ describe('react telephone input', function() {
     it('should render the top divs and inputses', () => {
         const wrapper = shallow(<ReactTelephoneInput />)
 
-        expect(wrapper.find('div.react-tel-input')).to.have.length(1)
+        expect(wrapper.find('div.intl-tel-input')).to.have.length(1)
         expect(wrapper.find('input')).to.have.length(1)
     })
 
@@ -65,7 +65,7 @@ describe('react telephone input', function() {
                 preferredCountries={['us', 'ca', 'zz', 'hk']}
             />
         )
-        expect(wrapper.find('div.flag-dropdown')).to.have.length(1)
+        expect(wrapper.find('div.flag-container')).to.have.length(1)
         expect(wrapper.find('div.selected-flag > div.us')).to.have.length(1)
 
         // the dropdown list is not there
